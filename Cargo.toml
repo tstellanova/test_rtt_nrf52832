@@ -1,0 +1,18 @@
+[package]
+name = "test_rtt_nrf52832"
+version = "0.1.0"
+authors = ["Todd Stellanova <tstellanova@users.noreply.github.com>"]
+edition = "2018"
+description = "Testing RTT debugging with the nrf52832"
+
+[dependencies]
+cortex-m = "0.6.2"
+cortex-m-rt = "0.6.12"
+embedded-hal = "0.2.3"
+nrf52832-hal = {version = "0.8.1", default-features = false, features = ["xxAA-package", "rt"]}
+panic-halt = { version = "0.2.0"}
+
+rtt-target = {version = "0.1.0", features=["cortex-m"] }
+
+
+
